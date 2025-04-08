@@ -395,6 +395,7 @@ table {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: inline-block;
 }
 
 html {
@@ -408,7 +409,7 @@ body {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   padding: 5rem;
-  background-color: white;
+  background-color: #FAFAFA;
 }
 
 .container {
@@ -418,7 +419,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
@@ -439,7 +440,7 @@ body {
 }
 
 .title-first {
-  color: #FFFFFF;
+  color: #FAFAFA;
 }
 .title-first__main {
   display: block;
@@ -474,14 +475,13 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  background-color: white;
+  background-color: #FAFAFA;
   padding: 1.5rem 4rem;
   border-radius: 5rem;
   font-size: 2rem;
   color: #777777;
   font-weight: 600;
   letter-spacing: 0.5rem;
-  display: inline-block;
   line-height: 2.4rem;
   transition: all 0.3s;
   position: relative;
@@ -500,7 +500,7 @@ body {
 }
 .btn::after {
   content: "";
-  background-color: white;
+  background-color: #FAFAFA;
   width: 100%;
   height: 100%;
   border-radius: 5rem;
