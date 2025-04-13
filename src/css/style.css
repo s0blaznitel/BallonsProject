@@ -444,6 +444,8 @@ body {
 
 .container {
   background-color: #F7F7F7;
+  position: relative;
+  z-index: 0;
 }
 
 body {
@@ -503,6 +505,9 @@ body {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
+.title-secondary_white {
+  color: #FFFFFF;
+}
 
 .title-third {
   font-size: 2rem;
@@ -548,6 +553,10 @@ body {
 
 .margin-bottom-87px {
   margin-bottom: 8.7rem;
+}
+
+.margin-bottom-95px {
+  margin-bottom: 9.5rem;
 }
 
 .btn:link, .btn:visited {
@@ -781,6 +790,77 @@ body {
   font-weight: 500;
 }
 
+.feedBack-card {
+  width: 78%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skewX(330deg);
+}
+.feedBack-card > * {
+  transform: skewX(-330deg);
+}
+.feedBack-card__img {
+  width: 15rem;
+  height: 15rem;
+  background: green;
+  float: left;
+  border-radius: 100rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  margin-right: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+.feedBack-card__img img {
+  height: 100%;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.feedBack-card__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  opacity: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  transition: all 0.5s;
+}
+.feedBack-card:hover .feedBack-card__name {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.feedBack-card:hover img {
+  transform: scale(1);
+  filter: blur(0.3rem) brightness(70%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
+  z-index: -1;
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -850,6 +930,7 @@ body {
 
 .section-about {
   padding-top: 8rem;
+  margin-bottom: 20rem;
 }
 
 .section-adventure {
@@ -862,5 +943,11 @@ body {
 }
 
 .section-tour {
-  padding-top: 21.5rem;
+  padding-top: 21rem;
+  margin-bottom: 8rem;
+}
+
+.section-feedBack {
+  padding: 8rem 0;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
