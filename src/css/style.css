@@ -439,7 +439,7 @@ html {
 
 body {
   padding: 5rem;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
 }
 
 .container {
@@ -455,7 +455,7 @@ body {
 }
 
 .title-first {
-  color: #FAFAFA;
+  color: #FFFFFF;
 }
 .title-first__main {
   display: block;
@@ -534,12 +534,20 @@ body {
   margin-bottom: 3rem;
 }
 
+.margin-bottom-45px {
+  margin-bottom: 4.5rem;
+}
+
 .margin-bottom-50px {
   margin-bottom: 5rem;
 }
 
 .margin-bottom-80px {
   margin-bottom: 8rem;
+}
+
+.margin-bottom-87px {
+  margin-bottom: 8.7rem;
 }
 
 .btn:link, .btn:visited {
@@ -550,7 +558,7 @@ body {
   padding: 1.5rem 4rem;
   border-radius: 5rem;
   font-size: 2rem;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   font-weight: 600;
   letter-spacing: 0.5rem;
   line-height: 2.4rem;
@@ -571,7 +579,7 @@ body {
 }
 .btn::after {
   content: "";
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   width: 100%;
   height: 100%;
   border-radius: 5rem;
@@ -601,7 +609,7 @@ body {
 }
 .btn-text:hover {
   background-color: #BA8554;
-  color: #FAFAFA;
+  color: #FFFFFF;
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   transform: translateY(-0.2rem);
 }
@@ -644,7 +652,7 @@ body {
 
 .adventure-card {
   padding: 2.5rem;
-  background-color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.5rem;
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -662,6 +670,115 @@ body {
 }
 .adventure-card p {
   line-height: 100%;
+}
+
+.card-tour {
+  height: 50.2rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+.card-tour__side {
+  height: 50.2rem;
+  transition: all 0.7s ease-out;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card-tour__side_front {
+  background: #FFFFFF;
+}
+.card-tour__side_back {
+  background: green;
+  transform: rotateY(180deg);
+  background: linear-gradient(-33deg, #A14F03, #BA8554);
+}
+.card-tour:hover .card-tour__side_front {
+  transform: rotateY(-180deg);
+}
+.card-tour:hover .card-tour__side_back {
+  transform: rotateY(0deg);
+}
+.card-tour__img {
+  background-blend-mode: hard-light;
+  height: 24.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 78%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 78%);
+}
+.card-tour__img_1 {
+  background: #BA8554 url(../img/card-1.png) center/cover no-repeat;
+}
+.card-tour__img_2 {
+  background: #BA8554 url(../img/card-2.png) center/cover no-repeat;
+}
+.card-tour__img_3 {
+  background: #BA8554 url(../img/card-3.png) center/cover no-repeat;
+}
+.card-tour__title {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #FFFFFF;
+  position: absolute;
+  top: 18.5rem;
+  right: 0rem;
+}
+.card-tour__span {
+  background: linear-gradient(-90deg, #A14F03, #BA8554);
+  padding: 1rem 2rem 0.3rem 2rem;
+}
+.card-tour__span_2 {
+  position: absolute;
+  top: 3.3rem;
+  right: 0rem;
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+}
+.card-tour__descr ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+.card-tour__descr ul li {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: #777777;
+  border-bottom: 1px solid #777777;
+  display: inline-block;
+}
+.card-tour__descr ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.card-tour__backSide-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-tour__text {
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.card-tour__text_1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.card-tour__text_2 {
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
 }
 
 .header {
@@ -742,4 +859,8 @@ body {
 }
 .section-adventure > * {
   transform: skewY(-7deg);
+}
+
+.section-tour {
+  padding-top: 21.5rem;
 }/*# sourceMappingURL=style.css.map */
