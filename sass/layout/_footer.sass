@@ -10,6 +10,14 @@
         display: inline-block
         &:not(:last-child)
             margin-right: 5rem
+        @include respond(tab-land)
+            &:not(:last-child)
+                margin-right: 1.6rem
+        @include respond(tab-port)
+            &:not(:last-child)
+                margin-right: 0rem
+                margin-bottom: 0rem
+                padding: 2rem
     &__link
         &:link, &:visited
             color: $color-gray
