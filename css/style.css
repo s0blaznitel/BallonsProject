@@ -1474,6 +1474,11 @@ body {
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7)), url(../img/section-adventure.png) center/cover no-repeat;
   transform: skewY(7deg);
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .section-adventure {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/section-adventure-big.png) center/cover no-repeat;
+  }
+}
 .section-adventure > * {
   transform: skewY(-7deg);
 }

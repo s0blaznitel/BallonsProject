@@ -5,6 +5,9 @@
     background: linear-gradient(90deg, rgba($color-light-brown, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../img/header-background.jpg) center / cover no-repeat
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
 
+    // Адаптив css картинки, (min-resolution: 192dpi) -- это размер колбочек на экране
+    // and (min-width: 670px) -- это минимальная ширина экрана, при которой будет использоваться другая картинка, если у нас крутой экран с очень большим количеством колбочекю DPR:2. 
+    // ,(min-width: 1340px) -- это минимальная ширина после которой будет использоваться картинка побольше, для экранов с меньшим количеством колбочек DPR:1
     @media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
         background: linear-gradient(90deg, rgba($color-black, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../img/header-background-big.jpg) center / cover no-repeat
     &__logo
