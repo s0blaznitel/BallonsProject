@@ -1,0 +1,23 @@
+{
+  "name": "tours",
+  "version": "1.0.1",
+  "description": "My project",
+  "homepage": "https://github.com/s0blaznitel/BallonsProject#readme",
+  "bugs": {
+    "url": "https://github.com/s0blaznitel/BallonsProject/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s0blaznitel/BallonsProject.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sass": "^1.86.3"
+  }
+}
